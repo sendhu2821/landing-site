@@ -47,7 +47,7 @@ body {
   background: radial-gradient(
     circle at center,
     #434343 0%,
-    #000 50%,
+    #000 35%,
     transparent 100%
   );
 }
@@ -287,6 +287,8 @@ body {
 
     .cocktail-tabs {
       @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
+
+      background-color: transparent !important;
 
       button {
         @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
