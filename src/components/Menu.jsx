@@ -44,9 +44,16 @@ const Menu = () => {
   const totalCocktails = allCocktails.length;
 
   const goToSlide = (index) => {
-    const newIndex = (index + totalCocktails) % totalCocktails;
-
-    setCurrentIndex(newIndex);
+    gsap.to(".cocktail img", {
+      opacity: 0,
+      xPercent: 100,
+      duration: 0.5,
+      ease: "power1.in",
+      onComplete: () => {
+        const newIndex = (index + totalCocktails) % totalCocktails;
+        setCurrentIndex(newIndex);
+      },
+    });
   };
 
   const getCocktailAt = (indexOffset) => {

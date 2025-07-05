@@ -18,6 +18,8 @@
 html,
 body {
   width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: black;
   color: white;
   scroll-behavior: smooth;
@@ -133,7 +135,9 @@ body {
   }
 
   video {
-    @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
+    @apply w-full md:h-dvh h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
+
+    top: 0 !important;
   }
 
   #cocktails {
