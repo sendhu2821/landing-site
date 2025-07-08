@@ -13,10 +13,10 @@ const Hero = () => {
     const splitHero = new SplitText(".title", { type: "chars,words" });
     const splitParagraph = new SplitText(".subtitle", { type: "lines" });
 
-    splitHero.chars.forEach((char) => char.classList.add("text-gradient"));
+    // splitHero.chars.forEach((char) => char.classList.add("text-gradient"));
 
     gsap.from(splitHero.chars, {
-      yPercent: 100,
+      yPercent: 120,
       duration: 1.8,
       ease: "expo.Out",
       stagger: 0.06,
@@ -51,7 +51,7 @@ const Hero = () => {
         trigger: "video",
         start: startValue,
         end: endValue,
-        scrub: true,
+        scrub: 1.5,
         pin: true,
         pinSpacing: false,
       },
@@ -67,7 +67,7 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title"> Martini </h1>
+        <h1 className="title"> Drizzle </h1>
 
         <img
           src="images/hero-left-leaf.png"
