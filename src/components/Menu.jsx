@@ -1,6 +1,6 @@
 "use client";
 
-import { allCocktails } from "../../constants/index.js";
+import { allCakes } from "../../constants/index.js";
 import { useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -41,7 +41,7 @@ const Menu = () => {
     );
   }, [currentIndex]);
 
-  const totalCocktails = allCocktails.length;
+  const totalCocktails = allCakes.length;
 
   const goToSlide = (index) => {
     gsap.to(".cocktail img", {
@@ -57,7 +57,7 @@ const Menu = () => {
   };
 
   const getCocktailAt = (indexOffset) => {
-    return allCocktails[
+    return allCakes[
       (currentIndex + indexOffset + totalCocktails) % totalCocktails
     ];
   };
@@ -84,7 +84,7 @@ const Menu = () => {
       </h2>
 
       <nav className="cocktail-tabs" aria-label="Cocktail Navigation">
-        {allCocktails.map((cocktail, index) => {
+        {allCakes.map((cocktail, index) => {
           const isActive = index === currentIndex;
 
           return (

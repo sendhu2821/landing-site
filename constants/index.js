@@ -1,15 +1,15 @@
 const navLinks = [
   {
-    id: "cocktails",
-    title: "Cocktails",
+    id: "cakes",
+    title: "Cakes",
   },
   {
     id: "about",
     title: "About Us",
   },
   {
-    id: "art",
-    title: "The Art",
+    id: "craft",
+    title: "The Craft",
   },
   {
     id: "contact",
@@ -17,57 +17,57 @@ const navLinks = [
   },
 ];
 
-const cocktailLists = [
+const cakeLists = [
   {
-    name: "Chapel Hill Shiraz",
-    country: "AU",
-    detail: "Battle",
-    price: "$10",
+    name: "Velvet Bloom",
+    country: "US",
+    detail: "Slice",
+    price: "$5",
   },
   {
-    name: "Caten Malbee",
-    country: "AU",
-    detail: "Battle",
-    price: "$49",
+    name: "Choco Charm",
+    country: "US",
+    detail: "Slice",
+    price: "$6",
   },
   {
-    name: "Rhino Pale Ale",
-    country: "CA",
-    detail: "750 ml",
-    price: "$20",
+    name: "Berry Delight",
+    country: "FR",
+    detail: "6 inch",
+    price: "$18",
   },
   {
-    name: "Irish Guinness",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
+    name: "Lemon Crave",
+    country: "IT",
+    detail: "8 inch",
+    price: "$22",
   },
 ];
 
-const mockTailLists = [
+const pastryLists = [
   {
-    name: "Tropical Bloom",
+    name: "Vanilla Dream",
     country: "US",
-    detail: "Battle",
-    price: "$10",
+    detail: "Slice",
+    price: "$4",
   },
   {
-    name: "Passionfruit Mint",
-    country: "US",
-    detail: "Battle",
-    price: "$49",
+    name: "Tiramisu Bliss",
+    country: "IT",
+    detail: "Slice",
+    price: "$6",
   },
   {
-    name: "Citrus Glow",
-    country: "CA",
-    detail: "750 ml",
-    price: "$20",
+    name: "Cocoa Tart",
+    country: "FR",
+    detail: "Mini",
+    price: "$3",
   },
   {
-    name: "Lavender Fizz",
-    country: "IE",
-    detail: "600 ml",
-    price: "$29",
+    name: "Strawberry Glaze",
+    country: "JP",
+    detail: "Mini",
+    price: "$3",
   },
 ];
 
@@ -87,25 +87,25 @@ const profileLists = [
 ];
 
 const featureLists = [
-  "Perfectly balanced blends",
-  "Garnished to perfection",
-  "Ice-cold every time",
-  "Expertly shaken & stirred",
+  "Freshly baked daily",
+  "Artfully decorated",
+  "Fluffy and moist layers",
+  "Whipped to perfection",
 ];
 
 const goodLists = [
-  "Handpicked ingredients",
-  "Signature techniques",
-  "Bartending artistry in action",
-  "Freshly muddled flavors",
+  "Premium ingredients only",
+  "Time-honored recipes",
+  "Crafted by master bakers",
+  "Made with love and butter",
 ];
 
 const storeInfo = {
   heading: "Where to Find Us",
-  address: "456, Raq Blvd. #404, Los Angeles, CA 90210",
+  address: "123, Cakewalk Street, Indiranagar, Bengaluru, KA 560038",
   contact: {
     phone: "(555) 987-6543",
-    email: "hello@jsmcocktail.com",
+    email: "hello@hoopaloopa.com",
   },
 };
 
@@ -134,50 +134,50 @@ const socials = [
   },
 ];
 
-const allCocktails = [
+const allCakes = [
   {
     id: 1,
-    name: "Classic Mojito",
+    name: "Strawberry Swirl",
     image: "/images/drink1.png",
-    title: "Simple Ingredients, Bold Flavor",
+    title: "Classic Flavors, Modern Twist",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "A delightful mix of soft sponge and fresh strawberries, topped with whipped cream. A classic made to impress any sweet tooth.",
   },
   {
     id: 2,
-    name: "Raspberry Mojito",
+    name: "Choco Lava Delight",
     image: "/images/drink2.png",
-    title: "A Zesty Classic That Never Fails",
+    title: "Indulgence in Every Layer",
     description:
-      "The Margarita is a classic that balances tangy lime, smooth tequila, and a touch of sweetness. Shaken, frozen, or on the rocks—it’s always crisp & refreshing.",
+      "Warm molten chocolate at the center, surrounded by moist cocoa sponge. A must-try for all chocolate lovers.",
   },
   {
     id: 3,
-    name: "Violet Breeze",
+    name: "Vanilla Raspberry Bliss",
     image: "/images/drink3.png",
-    title: "Simple Ingredients, Bold Flavor",
+    title: "Fresh, Fruity, and Fluffy",
     description:
-      "Made with tequila, lime juice, and orange liqueur, the Margarita is easy to make and full of character. Add a salted rim for the perfect drink on summer nights.",
+      "Light vanilla layers filled with raspberry jam and buttercream. Balanced sweetness and texture in every bite.",
   },
   {
     id: 4,
-    name: "Curacao Mojito",
+    name: "Caramel Crunch Stack",
     image: "/images/drink4.png",
-    title: "Crafted With Care, Poured With Love",
+    title: "Golden Layers, Sweet Finish",
     description:
-      "Each cocktail is made with fresh ingredients and a passion for perfecting every pour, whether you're celebrating or simply relaxing.",
+      "Caramel-infused sponge layered with toffee cream and topped with a crunchy nut topping. Rich, smooth, and satisfying.",
   },
 ];
 
 export {
   navLinks,
-  cocktailLists,
-  mockTailLists,
+  cakeLists,
+  pastryLists,
   profileLists,
   featureLists,
   goodLists,
   openingHours,
   storeInfo,
   socials,
-  allCocktails,
+  allCakes,
 };

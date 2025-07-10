@@ -67,7 +67,7 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title"> Drizzle </h1>
+        <h1 className="title"> Blend </h1>
 
         <img
           src="images/hero-left-leaf.png"
@@ -83,22 +83,23 @@ const Hero = () => {
         <div className="body">
           <div className="content">
             <div className="space-y-5 hidden md:block">
-              <p>Cool. Crisp. Classic.</p>
-              <p className="subtitle">
-                Sip the Spirit <br /> of Summer
+              <p>Fluffy. Frosted. Fabulous.</p>
+              <p className="subtitle leading-22">
+                A Slice of Sunshine <br /> on your Plate
               </p>
             </div>
 
             <div className="view-cocktails">
               <p className="subtitle">
-                Our martini blends top-shelf gin with a hint of dry vermouth. A
-                timeless classic, crafted for moments of pure elegance.
+                Our classic chocolate cake is layered with velvety ganache and
+                finished with a glossy glaze. Rich, refined, and meant for
+                indulgent moments.
               </p>
               <a
                 href="#cocktails"
                 className="font-semibold opacity-80 2xl:text-start text-center hover:text-yellow"
               >
-                View Cocktails
+                View Cakes
               </a>
             </div>
           </div>

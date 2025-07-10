@@ -40,18 +40,18 @@ const About = () => {
       <div className="mb-16 md:px-0 px-5">
         <div className="content">
           <div className="md:col-span-8">
-            <p className="badge">Best Cocktails</p>
+            <p className="badge">Best Cakes</p>
             <h2>
               Where every detail matters <span className="text-white">-</span>
-              from muddle to garnish
+              from fold to frosting
             </h2>
           </div>
 
           <div className="sub-content">
             <p>
-              Every cocktail we serve is a reflection of our obsession with
-              detail — from the first muddle to the final garnish. That care is
-              what turns a simple drink into something truly memorable.
+              Each cake is handcrafted with love and precision — from mixing the
+              batter to placing the final berry. Because details turn sweetness
+              into a story.
             </p>
 
             <div>
