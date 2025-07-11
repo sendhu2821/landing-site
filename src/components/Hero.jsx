@@ -67,9 +67,9 @@ const Hero = () => {
   return (
     <>
       <section id="hero" className="noisy">
-        <h1 className="title"> Blend </h1>
+        <h1 className="title"> Baked </h1>
 
-        <img
+        {/* <img
           src="images/hero-left-leaf.png"
           alt="hero-left-leaf"
           className="left-leaf"
@@ -79,7 +79,7 @@ const Hero = () => {
           src="images/hero-right-leaf.png"
           alt="hero-right-leaf"
           className="right-leaf"
-        />
+        /> */}
         <div className="body">
           <div className="content">
             <div className="space-y-5 hidden md:block">

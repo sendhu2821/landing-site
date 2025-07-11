@@ -44,7 +44,7 @@ const Contact = () => {
 
   return (
     <footer id="contact">
-      <img
+      {/* <img
         src="/images/footer-right-leaf.png"
         alt="leaf-right"
         id="f-right-leaf"
@@ -53,7 +53,7 @@ const Contact = () => {
         src="/images/footer-left-leaf.png"
         alt="leaf-left"
         id="f-left-leaf"
-      />
+      /> */}
 
       <div className="content">
         <h2>{storeInfo.heading}</h2>
