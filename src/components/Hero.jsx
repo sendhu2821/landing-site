@@ -13,8 +13,6 @@ const Hero = () => {
     const splitHero = new SplitText(".title", { type: "chars,words" });
     const splitParagraph = new SplitText(".subtitle", { type: "lines" });
 
-    // splitHero.chars.forEach((char) => char.classList.add("text-gradient"));
-
     gsap.from(splitHero.chars, {
       yPercent: 120,
       duration: 1.8,
@@ -31,27 +29,15 @@ const Hero = () => {
       delay: 1,
     });
 
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#hero",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      })
-      .to(".left-leaf", { y: -200 }, 0)
-      .to(".right-leaf", { y: 200 }, 0);
-
-    const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? "120% top" : "bottom 10%";
+    const startValue = isMobile ? "top 50%" : "center 50%";
+    const endValue = isMobile ? "120% top" : "bottom 0%";
 
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: "video",
         start: startValue,
         end: endValue,
-        scrub: 1.5,
+        scrub: true,
         pin: true,
         pinSpacing: false,
       },
@@ -68,18 +54,6 @@ const Hero = () => {
     <>
       <section id="hero" className="noisy">
         <h1 className="title"> Baked </h1>
-
-        {/* <img
-          src="images/hero-left-leaf.png"
-          alt="hero-left-leaf"
-          className="left-leaf"
-        />
-
-        <img
-          src="images/hero-right-leaf.png"
-          alt="hero-right-leaf"
-          className="right-leaf"
-        /> */}
         <div className="body">
           <div className="content">
             <div className="space-y-5 hidden md:block">
