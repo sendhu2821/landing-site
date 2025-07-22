@@ -8,10 +8,20 @@
 }
 
 @font-face {
+  font-family: "Orlanda";
+  src: url("fonts/Orlanda.otf") format("truetype");
+}
+
+@font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300; /* Light */
   src: url("/fonts/Montserrat.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Modern Negra";
+  scr: url("fonts/Modern Negra Demo.ttf") format("truetype");
 }
 
 @theme {
@@ -21,6 +31,8 @@
   --font-giselle: "Giselle", sans-serif;
   --font-serif: "DM Serif Text", serif;
   --font-montserrat: "Montserrat", sans-serif;
+  --font-orlanda: "Orlanda", sans-serif;
+  --font-negra: "Modern Negra", sans-serif;
 }
 
 html,
@@ -258,7 +270,7 @@ body {
     @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
 
     h2 {
-      @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-giselle text-center text-[#a7a7a7] mb-8;
+      @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-orlanda text-center text-[#a7a7a7] mb-8;
     }
 
     .content {
