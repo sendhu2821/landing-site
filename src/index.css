@@ -192,10 +192,10 @@ body {
         @apply space-y-8;
 
         li {
-          @apply flex justify-between items-start;
+          @apply flex justify-between items-start gap-24;
 
           h3 {
-            @apply font-giselle 2xl:text-3xl text-xl text-yellow;
+            @apply font-giselle 2xl:text-3xl text-4xl text-yellow;
           }
 
           p {
@@ -338,7 +338,7 @@ body {
     }
 
     .cocktail {
-      @apply flex-center mt-10;
+      @apply flex-center;
 
       img {
         @apply object-contain h-[60vh];
@@ -349,7 +349,7 @@ body {
       @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
 
       .info {
-        @apply space-y-4 lg:translate-y-20;
+        @apply space-y-4;
 
         #title {
           @apply font-giselle md:text-6xl text-3xl text-yellow max-w-80;
@@ -357,7 +357,7 @@ body {
       }
 
       .details {
-        @apply space-y-5 md:max-w-md text-left;
+        @apply space-y-5 md:max-w-md text-end;
 
         h2 {
           @apply md:text-5xl text-3xl font-serif;

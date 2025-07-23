@@ -33,13 +33,13 @@ const Cocktails = () => {
           <ul>
             {cakeLists.map(({ name, country, detail, price }) => (
               <li key={name}>
-                <div className="md:me-28">
+                <div className="flex flex-col">
                   <h3>{name}</h3>
                   <p>
                     {country} | {detail}
                   </p>
-                  <span>- {price}</span>
                 </div>
+                <span className="text-end">- {price}</span>
               </li>
             ))}
           </ul>
@@ -49,13 +49,13 @@ const Cocktails = () => {
           <ul>
             {pastryLists.map(({ name, country, detail, price }) => (
               <li key={name}>
-                <div className="me-28">
+                <div className="flex flex-col">
                   <h3>{name}</h3>
                   <p>
                     {country} | {detail}
                   </p>
-                  <span>- {price}</span>
                 </div>
+                <span className="justify-end">- {price}</span>
               </li>
             ))}
           </ul>
