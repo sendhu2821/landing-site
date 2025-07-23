@@ -64,7 +64,7 @@ const Hero = () => {
             </div>
 
             <div className="view-cocktails">
-              <p className="subtitle">
+              <p className="subtitle whitespace-pre-line">
                 Our classic chocolate cake is layered with velvety ganache and
                 finished with a glossy glaze. Rich, refined, and meant for
                 indulgent moments.
