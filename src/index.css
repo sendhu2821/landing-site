@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Orlanda";
-  src: url("fonts/Orlanda.otf") format("truetype");
+  src: url("/fonts/Orlanda.otf") format("truetype");
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Modern Negra";
-  scr: url("fonts/Modern Negra Demo.ttf") format("truetype");
+  scr: url("/fonts/Modern Negra Demo.ttf") format("truetype");
 }
 
 @theme {
