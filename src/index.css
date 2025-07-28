@@ -116,7 +116,7 @@ body {
     @apply relative z-10 min-h-dvh w-full border border-transparent;
 
     h1 {
-      @apply md:mt-32 mt-40 text-8xl md:text-[20vw] text-center font-giselle leading-none;
+      @apply md:mt-32 mt-40 text-8xl md:text-[16vw] text-center font-giselle leading-none;
     }
 
     .left-leaf {
