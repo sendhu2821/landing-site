@@ -29,8 +29,8 @@ const Hero = () => {
       delay: 1,
     });
 
-    const startValue = isMobile ? "top 50%" : "center 50%";
-    const endValue = isMobile ? "120% top" : "bottom 0%";
+    const startValue = isMobile ? "center 50%" : "center 50%";
+    const endValue = isMobile ? "bottom -2.5%" : "bottom 0%";
 
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -79,9 +79,9 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      <div className="video absolute inset-0">
+      <div className="video absolute inset-0 ">
         <video
-          className="video top-0"
+          className="absolute inset-0 w-full h-full object-cover video top-0"
           ref={videoRef}
           muted
           playsInline
