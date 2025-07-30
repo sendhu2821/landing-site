@@ -6,6 +6,7 @@ import { useMediaQuery } from "react-responsive";
 
 const Hero = () => {
   const videoRef = useRef();
+  const noisyRef = useRef(null);
 
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -29,8 +30,12 @@ const Hero = () => {
       delay: 1,
     });
 
+    const noisyHeight = noisyRef.current?.offsetHeight + 260 || 0;
+
+    console.log(noisyHeight);
+
     const startValue = isMobile ? "center 50%" : "center 50%";
-    const endValue = isMobile ? "266.5% bottom" : "bottom 0%";
+    const endValue = isMobile ? `${noisyHeight}px top` : "bottom 0%";
 
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -52,7 +57,7 @@ const Hero = () => {
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero" className="noisy" ref={noisyRef}>
         <h1 className="title"> Baked </h1>
         <div className="body">
           <div className="content">
@@ -81,7 +86,7 @@ const Hero = () => {
       </section>
       <div className="video absolute inset-0 ">
         <video
-          className="absolute inset-0 w-full h-full object-cover video top-0"
+          className="absolute inset-0 size-full object-cover video top-0"
           ref={videoRef}
           muted
           playsInline
