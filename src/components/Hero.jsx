@@ -30,7 +30,7 @@ const Hero = () => {
     });
 
     const startValue = isMobile ? "center 50%" : "center 50%";
-    const endValue = isMobile ? "bottom -2.5%" : "bottom 0%";
+    const endValue = isMobile ? "266.5% bottom" : "bottom 0%";
 
     let tl = gsap.timeline({
       scrollTrigger: {
@@ -40,6 +40,7 @@ const Hero = () => {
         scrub: true,
         pin: true,
         pinSpacing: false,
+        markers: true,
       },
     });
 
