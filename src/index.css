@@ -96,7 +96,7 @@ body {
     }
 
     p {
-      @apply font-giselle text-3xl -mb-2;
+      @apply font-giselle text-4xl -mb-2;
     }
 
     a {
